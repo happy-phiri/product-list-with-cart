@@ -10,7 +10,7 @@ function App() {
 
   // FETCHING DESSERTS FROM DATA.JSON
   useEffect(() => {
-    fetch("/public/data.json")
+    fetch("/data.json")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
